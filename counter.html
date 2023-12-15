@@ -1,19 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>COUNTER</title>
+ 
 </head>
+<!----------------------------STYLE------------------->
 <style>
-    h3
+    button{
+        border-radius:12px;
+        border:12px;
+        width:100px;
+        box-shadow:12px 12px 12px grey;
+        padding:12px;
+        font-size:15px;
+        font-family: serif;
+        margin:20px;
+        font-weight: bold;
+    }
+    *
     {
-       display:flex;
-       flex-direction: column;
-       color:grey;
+        margin:0;
+        padding:0;
+    }
+    .content
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: cornflowerblue;
+        width:100%;
+        height:700px;
     }
 </style>
 <body>
-    <h3>COUNTER</h3>
+    <div class="content">  <!--------------CLASS------------->
+        <div class="inside-content">
+            <h1 style="margin-bottom:20px;">BASIC COUNTER</h1>
+            <h1 id="innertext">0</h1>
+            <button onclick="increase()">INCREASE</button><!-----CREATING BUTTON FOR INCREASING OR DECREASING VALUE-->
+            <button onclick="decrease()">DECREASE</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <!---------------internal script---------------------->
+    <script>
+
+let counter=0;
+let b=document.getElementById("innertext");
+//code for counter for increasing or decreasing
+function increase()
+{ 
+    counter++;
+    b.innerHTML=counter;
+   
+}
+//code for counter resetting
+function reset()
+{
+    counter=0;
+    b.innerHTML=counter;
+   
+}
+//code for decreasing
+function decrease()
+{
+    counter--;
+    b.innerHTML=counter;
+   
+}
+
+    </script>
 </body>
 </html>
