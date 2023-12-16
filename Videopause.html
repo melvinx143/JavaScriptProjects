@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #joey
+    {
+        width:100%;
+        position: relative;
+        height:100%;
+    }
+    #form
+    {
+        position: absolute;
+        top:45%;
+        color:yellow;
+        font-size:35px;
+        right:25%;
+    
+    }
+    @media screen and (760px > width)
+    {
+#form
+{
+position: absolute;
+}
+#joey
+{
+ width:100%;
+ position: absolute;
+}
+    }
+</style>
+<style>
+
+</style>
 <body>
-    <video>
-<source src="joey.mp4.mp4">
+    <video id="joey" muted autoplay loop>
+<source src="joey.mp4.mp4" type="video/mp4">
     </video>
+    <form id="form">
+        <label for="show">Do you people love FRIENDS</label>
+        <input type="radio" id="yes" value="choose" name="friend">yes
+        <input type="radio" id="yes" value="choose" name="friend">no
+    </form>
 </body>
 </html>
