@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+ <style>
+    .content
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cornflowerblue;
+        width:100%;
+        height:700px;
+        padding:20px;
+        margin-top:20px;
+    }
+    *
+    {
+        margin:0;
+    }
+   
+    button{
+        width:100px;
+        padding:10px;
+        border-radius: 22px;
+        border:none;
+        margin:3px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: serif;
+    }
+  
+.moves,.content_body,.moves,.buttoning
+{
+    margin:10px;
+    width:100%;
+    text-align: center;
+    height:100%;
+    padding:40px;
+}
+    
+ </style>
+</head>
+<body>
+    <div class="content">
+        <!--------------------------------Intro-------------------------->
+        <div class="content_body">
+        <H2>WELCOME TO ROCK PAPER SCISSOR GAME</H2>
+    
+        </div>
+        <!--------------------------------------------------MOVES---------------------->
+       <div class="moves">
+        <h2>User's Move:
+            <span id="you">00</span>
+        </h2>
+        <h2>Computer's Move:
+            <span id="comp">00</span>
+        </h2>
+        <H2 id="status" style="text-align: center;"></H2>
+       </div>
+       <h3>SCORES:</h3>
+       <h2>Your score:
+       <p id="myscore" style="text-align: center;"></p></h2>
+
+       <h3>Computer score:
+       <p id="compscore" style="text-align: center;"></p></h3>
+
+       <h2 style="padding:20px;"">Choose your Move:</h2>
+       <!--------------------------------------------buttons ----------------------------->
+       <div class="buttoning">
+       <button class="rock" onclick="rock()">ROCK</button>
+       <button class="paper" onclick="paper()">PAPER</button>
+       <button class="scissor" onclick="scissor()">SCISSOR</button>
+      
+    </div>
+    <!---------------------------------------------------------------------------------------->
+
+    </div>
+    <script>
+        let rocks=document.querySelector('.rock');
+        let papers=document.querySelector('.paper');
+        let scissors=document.querySelector('.scissor');
+        let user=document.querySelector('#you');
+        let computerss=document.querySelector('#comp');
+        let statuss=document.getElementById("status");
+        let myscore=document.getElementById("myscore");
+        let compscore=document.getElementById("compscore");
+let ccount=0;
+let ucount=0;
+function rock()
+{
+    let move=Math.floor(Math.random()*10);
+ if((move>0)&&(move<3))
+ {
+    computerss.innerHTML='ROCK';
+    user.innerHTML='ROCK';
+    statuss.innerHTML='MATCH DRAW!!!'
+    statuss.style.color="yellow";
+ }
+ else if((move>4)&&(move<7))
+ {
+    computerss.innerHTML='PAPERS';
+    user.innerHTML='ROCK';
+    statuss.innerHTML='COMPUTER WON!!!'
+    statuss.style.color="red";
+    ccount++;
+    compscore.innerHTML=ccount;
+ }
+ else{
+    computerss.innerHTML='SCISSORS';
+    user.innerHTML='ROCK';
+    statuss.innerHTML='YOU WIN!!!'
+    statuss.style.color="green";
+    ucount++;
+    myscore.innerHTML=ucount;
+ }
+}
+
+ //paper logic
+
+ function paper()
+{
+    let move=Math.floor(Math.random()*10);
+ if((move>0)&&(move<3))
+ {
+    computerss.innerHTML='ROCK';
+    user.innerHTML='PAPER';
+    statuss.innerHTML='YOU WIN!!!'
+    statuss.style.color="GREEN";
+    ucount++;
+    myscore.innerHTML=ucount;
+ }
+ else if((move>4)&&(move<7))
+ {
+    computerss.innerHTML='PAPER';
+    user.innerHTML='PAPER';
+    statuss.innerHTML='DRAW!!!'
+    statuss.style.color="YELLOW";
+ }
+ else{
+    computerss.innerHTML='SCISSORS';
+    user.innerHTML='PAPER';
+    statuss.innerHTML='COMP WIN!!!'
+    statuss.style.color="RED";
+    ccomp++;
+    compscore.innerHTML=ccount;
+ }
+
+}
+ //scissor logic
+ function scissor()
+{
+    let move=Math.floor(Math.random()*10);
+ if((move>0)&&(move<3))
+ {
+    computerss.innerHTML='ROCK';
+    user.innerHTML='SCISSOR';
+    statuss.innerHTML='COMPUTER WON!!!'
+    statuss.style.color="red";
+    ccount++;
+    compscore.innerHTML=ccount;
+ }
+ else if((move>4)&&(move<7))
+ {
+    computerss.innerHTML='PAPERS';
+    user.innerHTML='SCISSOR';
+    statuss.innerHTML='YOU WIN!!!'
+    statuss.style.color="green";
+    ucount++;
+    myscore.innerHTML=ucount;
+ }
+    
+ else{
+    computerss.innerHTML='SCISSOR';
+    user.innerHTML='SCISSOR';
+
+    statuss.innerHTML='MATCH DRAW!!!'
+    statuss.style.color="yellow";
+   
+}
+
+ 
+}
+    </script>
+</body>
+</html>
