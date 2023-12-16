@@ -15,9 +15,14 @@
     #form
     {
         position: absolute;
-        top:45%;
-        color:yellow;
+        top:3%;
+        color:blue;
         font-size:35px;
+        opacity:0.5;
+        background-color: aliceblue;
+      PADDING:10PX;
+        display:flex;
+        flex-direction: row;
         right:25%;
     
     }
@@ -33,6 +38,23 @@ position: absolute;
  position: absolute;
 }
     }
+    * {
+        padding:0;
+        margin:0;
+    }
+    #btn
+    {
+        position:absolute;
+        top:15%;
+        font-family: serif;
+        border-radius: 22px;
+        border:12px;
+        box-shadow:2px 2px 2px black;
+        padding:10px;
+        font-size: 19px;
+        right:40%;
+        cursor:pointer;
+    }
 </style>
 <style>
 
@@ -41,10 +63,28 @@ position: absolute;
     <video id="joey" muted autoplay loop>
 <source src="joey.mp4.mp4" type="video/mp4">
     </video>
-    <form id="form">
-        <label for="show">Do you people love FRIENDS</label>
-        <input type="radio" id="yes" value="choose" name="friend">yes
-        <input type="radio" id="yes" value="choose" name="friend">no
-    </form>
+
+    <p id="form">JOEY TRIBBANI IN THE HOUSE</p>
+    <button id="btn">Click Here</button>
+<script>
+    let btn=document.getElementById("btn");
+    let flag=1;
+    let innertextingelement=document.getElementById("form");
+    btn.addEventListener('click',function(){
+if(flag==0)
+{
+    innertextingelement.style.color="red";
+    btn.innerHTML="PLAY";
+    joey.pause();
+    flag=1;
+}
+else{
+    innertextingelement.style.color="green";
+    btn.innerHTML="PAUSE";
+   joey.play();
+    flag=0;
+}
+    })
+</script>
 </body>
 </html>
