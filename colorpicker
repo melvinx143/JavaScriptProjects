@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navigation
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        color:white;
+        padding:30px;
+        font-size: 33px;
+        text-shadow: 2px 2px 2px grey;
+    }
+    *
+    {
+        padding:0;margin:0;
+    }
+.center_desc
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding:20px;
+    background-color: aquamarine;
+    width:100%;
+    height:600px;
+   
+    text-wrap: wrap;
+}
+.text_desc
+{
+    
+    top:25%;
+    right:40%;
+    padding:20px;
+    background-color: antiquewhite;
+    width:300px;
+text-align: center;
+font-size: 18px;
+}
+button{
+    padding:20px;
+    margin-top:10px;
+    border-radius: 22px;
+    border:none;
+    box-shadow: 12px 12px 12px grey;
+    font-family: serif;
+    font-size: 18px;
+}
+@media screen and (min-width:553px) {
+    .center_desc{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+     text-align: center;
+    }
+    #navigation
+    {
+        width:100%;
+    }
+}
+</style>
+<body>
+    <nav id="navigation">
+        <h1>Color Picker</h1>
+    </nav>
+    <div class="center_desc">
+    
+    <div class="text_desc">
+        <div class="coloring">Name of the color:</div>
+        <h1 id="colorcode"></h1><br>
+        <button onclick="counter()">click Here</button>
+    </div>
+</div>
+<script>
+    let cc=document.getElementById("colorcode");
+    let cd=document.querySelector(".center_desc");
+    function counter()
+    {
+    let display=['red','green','yellow','gray','violet','pink','lemon','skyblue','silver'];
+    let a=Math.floor((Math.random())*display.length);
+cc.innerHTML=display[a];
+cd.style.backgroundColor=display[a];
+console.log(cd.style.backgroundColor);
+    }
+</script>
+</body>
+</html>
+
+Features:We can change the background color by clicking the button.
+Technology used:HTML,CSS,Javascript
+Concepts Implemented
+HTML:div,pseudo,class,body,buttons,header
+css:background color,internal css,flex box,padding,margin
+javascript:DOM,function,array,math functions
