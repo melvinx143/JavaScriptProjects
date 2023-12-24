@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <style>
+   
     .content_1
     {
         display:grid;
@@ -15,6 +16,7 @@
         padding:8px;
         text-align: center;
        box-sizing: border-box;
+     
     
     }
    
@@ -24,12 +26,14 @@
     {
     
         width:680px;
-        border:2px solid black;
-        padding:15px;
+      
+        padding:10px;
         box-sizing: content-box;
         height:650px;
-        margin: auto;
+    margin-bottom:10px;
+        box-shadow: 12px 12px 12px grey;
     }
+    
     .statuspolitics
     {
         text-align: center;
@@ -38,6 +42,10 @@ font-family: 'Poppins', sans-serif;
 margin-top: 12px;
 padding:12px;
     }
+    #politicans:hover{
+        text-decoration: underline green;
+    text-underline-offset: 1.5rem;  
+  }
     #briefdescp
     {
         display:flex;
@@ -48,8 +56,8 @@ padding:12px;
     {
         display:grid;
         grid-template-rows: auto auto;
-      
-        grid-gap:35px;
+        grid-gap:34px;
+        padding:10px;
     }
     .content_2
     {
@@ -58,9 +66,8 @@ padding:12px;
         align-items: center;
         justify-content: center;
         text-align: center;
-     
         padding:20px;
-        width:94%;
+        width:91%;
        margin-left: 1%;
     }
     
@@ -103,7 +110,7 @@ margin-bottom:20px;
     background-color: black;
     color:white;
     text-align: center;
-    padding:20px;
+    padding:10px;
     font-size: 33px;
     font-weight: bold;
 font-family: serif;
@@ -127,11 +134,12 @@ font-family: serif;
     {
         display:flex;
         flex-direction: column;
-        padding:8px;
+        padding:10px;
         text-align: center;
        box-sizing: border-box;
        width:80%;
-    
+       margin-top:10px;
+   
     }
 }
 #sportsperson
@@ -143,6 +151,9 @@ font-family: serif;
 {
     padding:0;
     margin:0;
+    color:grey;
+   
+    
 }
 .content_logo
 {
@@ -153,6 +164,7 @@ font-family: serif;
 }
 .content_logo_part img{
     border-radius: 50%;
+    box-shadow: 12px 12px 12px grey;
 }
 #nameceleb
 {
@@ -163,12 +175,16 @@ font-family: serif;
 }
 .contentt_logo_part2
 {
-    text-shadow: 12px 12px 12px black;
+    text-shadow: 12px 12px 12px white;
     color:green;
     font-size: 30px;
+
 }
 
-
+#nav-link
+{
+    color:blue;
+}
 </style>
 <body>
     <!-----------------------------------------NAVIGATION BAR-------------------------------------------------------->
@@ -177,18 +193,18 @@ font-family: serif;
         <div class="logo">
             <img src="indianflag.png" id="img_content"width="50px" height="30px">
         </div>
-        <li><a href="#politicans">Politics</a></li>
-        <li><a href="#sportsperson">SportsPersons</a></li>
-        <li><a href="#actors">Actors</a></li>
-        <li><a href="#entrepreneur">Entrepreneurs</a></li>
-        <li><a href="#social-activist">Social-Activist</a></li>
-        <li id="moon"><span>&#x2600;</span></li>
+        <li><a href="#politicans" id="nav-link">Politics</a></li>
+        <li><a href="#sportsperson" id="nav-link">SportsPersons</a></li>
+        <li><a href="#actors" id="nav-link">Actors</a></li>
+        <li><a href="#entrepreneur" id="nav-link">Entrepreneurs</a></li>
+        <li><a href="#social-activist" id="nav-link">Social-Activist</a></li>
+        <li><span id="moon">&#x2600;</span></li>
     </nav>
     <!-----------------------------------------------LOGO FOR WEBSITE---------------------------------------------------------------------------->
     <div class="logo">
 <div class="content_logo">
     <div class="content_logo_part">
-        <img src="gandhi-2.webp">
+        <img src="gandhi-2.jpg.webp">
     </div>
     <div class="contentt_logo_part2">
         <blockquote>
@@ -221,11 +237,11 @@ font-family: serif;
                    <h4 id="briefdescp">Jagdeep Dhankhar (born 18 May 1951) is an Indian politician and lawyer, serving as the current Vice President of India since 2022. He previously served as the Governor of West Bengal from 2019 to 2022. He also served as a Union Minister of State for Parliamentary Affairs in the Chandra Shekhar ministry from 1990 to 1991. He was a member of Lok Sabha from 1989 to 1991 and later a Member of Rajasthan Legislative Assembly from 1993 to 1998. He has also been affiliated with multiple political parties in India, including the Bharatiya Janata Party, Indian National Congress and Janata Dal</h4>
                   </div>
             </div>
-        
+     </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
         <div class="content_2">
    <div class="primeminister">
-    <img src="modi.avif" width="97%" height="500px" style="align-items: center;display:flex;flex-direction: row;justify-content: center;box-shadow:12px 12px 12px black;margin-bottom:25px;">
+    <img src="modi.avif" width="100%" height="500px" style="align-items: center;display:flex;flex-direction: row;justify-content: center;box-shadow:12px 12px 12px grey;margin-bottom:25px;">
     <div class="statuspolitics">
         <h3 id="nameceleb">Narendra Modi</h3>
         <h2>Prime Minister</h2>
@@ -233,8 +249,7 @@ font-family: serif;
        <h4> Indian politician who has served as the 14th prime minister of India since May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right wing Hindu nationalist paramilitary volunteer organisation. He is the longest-serving prime minister from outside the Indian National Congress. Modi's policies during his second term have been credited with reducing corruption in Gujarat. He established financial and technology parks in the state and during the 2007 Vibrant Gujarat summit, real-estate investment deals worth ₹6.6 trillion (equivalent to ₹20 trillion or US$250 billion in 2023) were signed.The Modi government finished the process of taking electricity to every village in Gujarat its predecessor had almost completed. Modi significantly changed the state's system of power distribution, greatly impacting farmers. Gujarat expanded the <em>Jyotigram Yojana scheme</em>, in which agricultural electricity was separated from other rural electricity which benefitted and transformed farmers life in a positive way.</h4>
       </div>
    </div>
-        </div>
-
+        
     <!-----------------------------------------------SPORTSPERSONS------------------------------------------------------------------->
     <div id="politicans">SPORTSPERSONS</div>
     <div id="sportsperson">
@@ -419,7 +434,8 @@ In 2014, he was the co-recipient of the Nobel Peace Prize, along with Malala You
     </h4>
 </div>
 </div>
-    </div>
+</div>
+</div>
 </div>
 </div>
     </div>
@@ -428,18 +444,22 @@ In 2014, he was the co-recipient of the Nobel Peace Prize, along with Malala You
     <script>
         let moon=document.getElementById("moon");
         let eb=document.getElementById("entirebody");
-        let flag=0;
+     let navlink=document.getElementById("nav-link")
+     let content_1=document.querySelectorAll(".content_1");
+        let flag=1;
         moon.addEventListener('click',function(){
-            if(flag==1)
+            if(flag==0)
             {
             moon.style.color="white";
             eb.style.backgroundColor="black";
-            flag=0;
+            navlink.color="white";
+            flag=1;
+           
             }
        else{
         moon.style.color="black";
             eb.style.backgroundColor="white";
-            flag=1;
+            flag=0;
        }
 
         })
