@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content_1
+    {
+        display:grid;
+        grid-template-columns: auto auto;
+   grid-gap:10px;
+        padding:8px;
+        text-align: center;
+       box-sizing: border-box;
+    
+    }
+   
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;1,500&family=Poppins:ital,wght@1,600&display=swap');
+
+    .prez,.vp
+    {
+    
+        width:680px;
+        border:2px solid black;
+        padding:15px;
+        box-sizing: content-box;
+        height:650px;
+        margin: auto;
+    }
+    .statuspolitics
+    {
+        text-align: center;
+        font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+margin-top: 12px;
+padding:12px;
+    }
+    #briefdescp
+    {
+        display:flex;
+        justify-items: center;
+        text-align: center;
+    }
+    .content
+    {
+        display:grid;
+        grid-template-rows: auto auto;
+      
+        grid-gap:35px;
+    }
+    .content_2
+    {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     
+        padding:20px;
+        width:94%;
+       margin-left: 1%;
+    }
+    
+#social-activist,#actors,#sportsperson,#entrepreneurs,#politicans
+{
+    margin-top:30px;
+}
+#navigation
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        list-style-type: none;
+        text-align:center;
+        align-items: center;
+        cursor:pointer;
+        font-size: 23px;
+        padding:20px;
+font-family: serif;
+
+margin-bottom:20px;
+    }
+
+   html{
+    scroll-behavior: smooth;
+   }
+   li a{
+    text-decoration: none;
+    color:black;
+    font-family: serif;
+    font-size:18px;
+   }
+   li a:hover
+{
+    text-decoration: underline green;
+    text-underline-offset: 1.5rem;
+}
+#politicans
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:20px;
+    font-size: 33px;
+    font-weight: bold;
+font-family: serif;
+}
+@media screen and (max-width:1137px) {
+    #navigation
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    #politicans
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+   width:100%;
+   font-size: 33px;
+   font-family: serif;
+}
+.content_1
+    {
+        display:flex;
+        flex-direction: column;
+        padding:8px;
+        text-align: center;
+       box-sizing: border-box;
+       width:80%;
+    
+    }
+}
+#sportsperson
+{
+    border:2px solid black;
+    padding:22px;
+}
+*
+{
+    padding:0;
+    margin:0;
+}
+.content_logo
+{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.content_logo_part img{
+    border-radius: 50%;
+}
+#nameceleb
+{
+    padding:10px;
+    text-shadow: 10px 10px 12px black;
+    color:grey;
+    font-size: 22px;
+}
+.contentt_logo_part2
+{
+    text-shadow: 12px 12px 12px black;
+    color:green;
+    font-size: 30px;
+}
+
+
+</style>
+<body>
+    <!-----------------------------------------NAVIGATION BAR-------------------------------------------------------->
+<div id="entirebody">
+    <nav id="navigation">
+        <div class="logo">
+            <img src="./images/indianflag.png" id="img_content"width="50px" height="30px">
+        </div>
+        <li><a href="#politicans">Politics</a></li>
+        <li><a href="#sportsperson">SportsPersons</a></li>
+        <li><a href="#actors">Actors</a></li>
+        <li><a href="#entrepreneur">Entrepreneurs</a></li>
+        <li><a href="#social-activist">Social-Activist</a></li>
+        <li id="moon"><span>&#x2600;</span></li>
+    </nav>
+    <!-----------------------------------------------LOGO FOR WEBSITE---------------------------------------------------------------------------->
+    <div class="logo">
+<div class="content_logo">
+    <div class="content_logo_part">
+        <img src="./images/gandhi-2.webp">
+    </div>
+    <div class="contentt_logo_part2">
+        <blockquote>
+            <h1>“The weak can never forgive. Forgiveness is the attribute of the strong.”</h1>
+        </blockquote>
+    </div>
+</div>
+    </div>
+    <!------------------------------------------------------------------------------------------------>
+
+    <div class="content">
+        <div id="politicans">POLITICS</div>
+        <div class="content_1">
+<!--------------------------------------------------------------------PRESIDENT------------------------------------------------------------------->
+            <div class="prez">
+                <img src="./images/president_droupadi_murmu.avif" width="650px">
+            <div class="statuspolitics">
+               <h3 id="nameceleb">Droupadi Murmu</h3>
+                <h2>President</h2>
+            </div>
+<h4 id="briefdescp">Droupadi Murmu is an Indian politician and former teacher who is serving as the 15th and current President of India since 2022. She won the 2022 presidential election on the nomination of BJP.She is the first person belonging to the tribal community and also the second woman after Pratibha Patil to hold the office. She is also the youngest person to occupy the post and the first President born in an independent India.Previously, she served as the 8th Governor of Jharkhand from 2015 to 2021, as a member of the Odisha Legislative Assembly from Rairangpur Assembly constituency from 2000 to 2009, and as Minister of State (Independent Charge), Government of Odisha from 2000-2004. Before entering politics, she worked as a clerk in the State Irrigation and Power Department from 1979 to 1983, and then as a teacher in Rairangpur from 1994 until 1997.</h4>
+            </div>
+<!--------------------------------------------------------------------VICE PRESIDENT--------------------------------------------------------------->
+            <div class="vp">
+                <img src="./images/Vice_President_Shri_Jagdeep_Dhankar_official_portrait.jpg" width="650px" height="350px;">
+                <div class="statuspolitics">
+                    <h3 id="nameceleb">Jagdeep Dhankhar</h3>
+                    <h2>Vice President</h2>
+                </div>
+                   <h4 id="briefdescp">Jagdeep Dhankhar (born 18 May 1951) is an Indian politician and lawyer, serving as the current Vice President of India since 2022. He previously served as the Governor of West Bengal from 2019 to 2022. He also served as a Union Minister of State for Parliamentary Affairs in the Chandra Shekhar ministry from 1990 to 1991. He was a member of Lok Sabha from 1989 to 1991 and later a Member of Rajasthan Legislative Assembly from 1993 to 1998. He has also been affiliated with multiple political parties in India, including the Bharatiya Janata Party, Indian National Congress and Janata Dal</h4>
+                  </div>
+            </div>
+        
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="content_2">
+   <div class="primeminister">
+    <img src="./images/modi.avif" width="97%" height="500px" style="align-items: center;display:flex;flex-direction: row;justify-content: center;box-shadow:12px 12px 12px black;margin-bottom:25px;">
+    <div class="statuspolitics">
+        <h3 id="nameceleb">Narendra Modi</h3>
+        <h2>Prime Minister</h2>
+    </div>
+       <h4> Indian politician who has served as the 14th prime minister of India since May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right wing Hindu nationalist paramilitary volunteer organisation. He is the longest-serving prime minister from outside the Indian National Congress. Modi's policies during his second term have been credited with reducing corruption in Gujarat. He established financial and technology parks in the state and during the 2007 Vibrant Gujarat summit, real-estate investment deals worth ₹6.6 trillion (equivalent to ₹20 trillion or US$250 billion in 2023) were signed.The Modi government finished the process of taking electricity to every village in Gujarat its predecessor had almost completed. Modi significantly changed the state's system of power distribution, greatly impacting farmers. Gujarat expanded the <em>Jyotigram Yojana scheme</em>, in which agricultural electricity was separated from other rural electricity which benefitted and transformed farmers life in a positive way.</h4>
+      </div>
+   </div>
+        </div>
+    </div>
+    <!-----------------------------------------------SPORTSPERSONS------------------------------------------------------------------->
+    <div id="politicans">SPORTSPERSONS</div>
+    <div id="sportsperson">
+<div class="content_1">
+    
+    <div class="prez">
+        <img src="./images/sachin.jpg" width="650px">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Sachin Tendulkar</h3>
+        <h2>Cricket</h2>
+    </div>
+<h4 id="briefdescp">Indian former international cricketer who captained the Indian national team. He is widely regarded as one of the greatest batsmen in the history of cricket.Hailed as the world's most prolific batsman of all time, he is the all-time highest run-scorer in both ODI and Test cricket with more than 18,000 runs and 15,000 runs, respectively. He also holds the record for receiving the most player of the match awards in international cricket.[6] Tendulkar was a Member of Parliament, Rajya Sabha by nomination from 2012 to 2018.Tendulkar played 664 international cricket matches in total, scoring 34,357 runs
+    
+</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/sunilchettri.jpg" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Sunil 
+        Chettri</h3>
+        <h2>Football</h2>
+    </div>
+<h4 id="briefdescp">Indian professional footballer who plays as a forward and captains both Indian Super League club Bengaluru FC and the India national team. He is known for his link-up play, goal scoring abilities, and leadership.He is the third-highest international goalscorer among active players, behind only Cristiano Ronaldo and Lionel Messi,fourth overall, and is also the most-capped player and the all-time top goalscorer of the India national team. He is widely regarded as one of the greatest Indian footballers of all time for his contributions for the country.</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/viswanathan-anand-3.webp" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Viswanathan-Anand</h3>
+        <h2>Chess</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian chess grandmaster and a former five-time World Chess Champion.He became the first grandmaster from India in 1988, and has the eighth highest peak FIDE rating of all-time.In 2022, he was elected the deputy president of FIDE.
+    In April 2006, Anand became the fourth player in history to pass the 2800 Elo mark on the FIDE rating list, after Kramnik, Topalov, and Garry Kasparov.He occupied the number one position for 21 months, the sixth-longest period on record.
+    Anand was the first recipient of the Khel Ratna Award in 1991–92, India's highest sporting honour. In 2007, he was awarded India's second-highest civilian award, the Padma Vibhushan, making him the first sportsperson to receive the award
+</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/Sania-Martina_AP01.jpg" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Sania Mirza</h3>
+        <h2>Tennis</h2>
+    </div>
+<h4 id="briefdescp"> 
+   Indian former professional tennis player. A former doubles world No. 1, she won six major titles – three in women's doubles and three in mixed doubles.From 2003 until her retirement from singles in 2013, she was ranked by the Women's Tennis Association as the No. 1 Indian in singles.Throughout her career, Mirza has established herself as one of the most known, highest-paid, and influential athletes in India.
+   She is one of only two Indian women to win a WTA Tour title, and the only one to be ranked within the top 100 in singles. Mirza is the third Indian woman in the Open Era (after Nirupama Mankad and Nirupama Sanjeev, and the second in singles after Sanjeev) to contest and win a match at a major, and the first to advance past the second round. In doubles, Mirza won 43 titles and spent 91 weeks as world No. 1
+</h4>
+    </div>
+
+</div>
+   
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-----------------------------------------------------------------------------------ACTORS------------------------------------------------------------->
+    <div id="politicans">ACTORS</div>
+    <div id="actors">
+<div class="content_1">
+    
+    <div class="prez">
+        <img src="./images/amitabh.jpg" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Amitabh Bachchan</h3>
+        <h2>Actor</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian actor, film producer, television host, occasional playback singer, and former politician actively engaged in Hindi cinema. With a cinematic journey spanning over five decades, he has played pivotal roles in over 200 films. Widely recognised as one of the most accomplished and influential actors in the history of Indian cinema.Bachchan is often hailed as the Shahenshah of Bollywood, Sadi Ke Mahanayak (translated as "Greatest actor of the century" in Hindi), Star of the Millennium, or simply Big B.His dominance in the Indian film industry during the 1970s–80s led the French director François Truffaut to describe it as a "one-man industry".
+    our Millennium online poll in 1999.In October 2003, TIME magazine dubbed Bachchan the "Star of the Millennium"</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/shahrukh.jpg" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Shahrukh Khan</h3>
+        <h2>Actor</h2>
+    </div>
+    <h4 id="briefdescp">Indian actor and film producer who works in Hindi films. Referred to in the media as the "Baadshah of Bollywood" and "King Khan",he has appeared in more than 90 films, and earned numerous accolades, including 14 Filmfare Awards. He has been awarded the Padma Shri by the Government of India, as well as the Ordre des Arts et des Lettres and Legion of Honour by the Government of France. Khan has a significant following in Asia and the Indian diaspora worldwide. In terms of audience size and income, several media outlets have described him as one of the most successful film stars in the world.Many of his films thematise Indian national identity and connections with diaspora communities, or gender, racial, social and religious differences and grievances.
+    </h4>
+</div>
+    <div class="prez">
+        <img src="./images/rajesh.avif" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Rajesh Khanna</h3>
+        <h2>Actor</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian actor, film producer and politician who worked in Hindi films. Considered as one of the greatest and most successful actors in the history of Indian cinema, he is known as the First Superstar of Indian cinema.He has consecutively starred in a record 15 solo hero successful films between 1969 and 1971.He was the highest-paid actor in Hindi cinema throughout the 1970s and 1980s.His accolades include five Filmfare Awards, and in 2013, he was posthumously awarded the Padma Bhushan, India's third highest civilian honour.
+    Khanna died on 18 July 2012, after a period of illness.He has been honoured with a stamp and statue in his likeness, and a road renamed after him by the Prime Minister of India.
+</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/madhuridixit11588761102.webp" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Madhuri Dixit</h3>
+        <h2>Actress</h2>
+    </div>
+<h4 id="briefdescp"> 
+    A leading actress of Indian cinema, she has appeared in over 70 films.Noted by critics for her beauty, dancing skills, and characters, Dixit was credited for singularly paralleling her male contemporaries and leading star vehicles in a male-dominated industry.
+    She was among the country's highest-paid celebrities throughout the 1990s and early 2000s, and has featured in Forbes India's Celebrity 100 list since its inception in 2012.Her accolades include six Filmfare Awards from a record 17 nominations. In 2008, the Government of India awarded her with Padma Shri, the fourth-highest civilian honour of the country. 
+</h4>
+    </div>
+
+</div>
+    </div>
+    <!---------------------------------------------------------------------------ENTREPRENEUER----------------------------------------------------------------------------->
+    <div id="politicans">ENTREPRENEUR</div>
+    <div id="entrepreneur">
+<div class="content_1">
+    
+    <div class="prez">
+        <img src="./images/ambani.webp" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Mukesh Ambani</h3>
+        <h2>Business</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian billionaire businessman. He is currently the chairman and managing director of Reliance Industries, India's most valuable company by market value.With an estimated net worth of $92 billion as of December 2023, he is the richest person in Asia and 15th richest in the world.Time magazine listed him as one of the 100 most influential people of 2019, under the "Titans" section.    
+    Ambani was titled "The World's Richest Sports Team Owner" after he purchased the IPL cricket team Mumbai Indians for $111.9 million in 2008.
+    Reliance's Jio has earned a top-five spot in the country's telecommunication services since its public launch on 5 September 2016.
+</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/ratantata.png" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Ratan Tata</h3>
+        <h2>Business</h2>
+    </div>
+    <h4 id="briefdescp">Indian industrialist, philanthropist and former chairman of Tata Sons. He was a chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through February 2017. He continues to head its charitable trusts.In 2008, he received the Padma Vibhushan, the second highest civilian honour in India, after receiving the Padma Bhushan, the third highest civilian honour in 2000..He graduated from the Cornell University College of Architecture with a bachelor's degree in architecture.He joined Tata in 1961, where he worked on the shop floor of Tata Steel. He later succeeded J. R. D. Tata as chairman of Tata Sons upon the latter's retirement in 1991. Under his tenure the Tata Group acquired Tetley, Jaguar Land Rover, and Corus, in an attempt to turn Tata from a largely India-centric group into a global business. Tata is also one of the largest philanthropists.</h4>
+</div>
+    <div class="prez">
+        <img src="./images/azim.png" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Azim Premji</h3>
+        <h2>Business</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian businessman and philanthropist, who was the chairman of Wipro Limited. Premji remains a non-executive member of the board and founder chairman.He is informally known as the Czar of the Indian IT Industry.[5][6] He was responsible for guiding Wipro through four decades of diversification and growth, to finally emerge as one of the global leaders in the software industry.SIn 2010, he was voted among the 20 most powerful men in the world by Asiaweek.[9] He has twice been listed among the 100 most influential people by Time magazine, once in 2004 and more recently in 2011.For years, he has been regularly listed one among The 500 Most Influential Muslims.[11][12] He also serves as the Chancellor of Azim Premji University, Bangalore. Premji was awarded Padma Vibhushan, India's second highest civilian award, by the Government of India.
+    </div>
+
+    <div class="prez">
+        <img src="./images/anand mahindra.jpg" width="650px" height="350px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Anand Mahindra</h3>
+        <h2>Business</h2>
+    </div>
+<h4 id="briefdescp"> 
+    Indian billionaire businessman, and the chairman of Mahindra Group, a Mumbai-based business conglomerate.The group operates in aerospace, agribusiness, aftermarket, automotive, components, construction equipment, defence, energy, farm equipment, finance and insurance, industrial equipment, information technology, leisure and hospitality, logistics, real estate and retail.Mahindra is the grandson of Jagdish Chandra Mahindra, co-founder of Mahindra & Mahindra.
+
+As of 2023, his net worth according to Forbes was estimated to be $2.1 billion.He is an alumnus of Harvard University and Harvard Business School.In 1996, he established Nanhi Kali, a non-government organisation that supports education for underprivileged girls in India
+    </div>
+
+</div>
+    </div>
+<!----------------------------------------------------------------------------SOCIAL ACTIVIST--------------------------------------------------------------------------------------------------->
+<div id="politicans">SOCIAL-ACTIVIST</div>
+    <div id="social-activist">
+<div class="content_1">
+    
+    <div class="prez">
+        <img src="./images/anna.avif" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Anna Hazare</h3>
+        <h2>Social-Acitivist</h2>
+    </div>
+<h4 id="briefdescp">
+    Indian social activist who led movements to promote rural development, increase government transparency, and investigate and punish corruption in public life. In addition to organising and encouraging grassroots movements, Hazare frequently conducted hunger strikes to further his causes—a tactic reminiscent, to many, of the work of Mahatma Gandhi.Hazare also contributed to the development and structuring of Ralegan Siddhi, a village in Parner taluka of Ahmednagar district, Maharashtra, India. He was awarded the Padma Bhushan—the third-highest civilian award—by the Government of India in 1992 for his efforts in establishing this village as a model for others.
+</h4>
+    </div>
+
+    <div class="prez">
+        <img src="./images/satya.jpg" width="650px" height="370px;">
+    <div class="statuspolitics">
+       <h3 id="nameceleb">Kailash Satyarthi</h3>
+        <h2>Social-Acitivist</h2>
+    </div>
+    <h4 id="briefdescp">
+        Indian social reformer who campaigned against child labor in India and advocated the universal right to education.
+
+In 2014, he was the co-recipient of the Nobel Peace Prize, along with Malala Yousafzai, "for their struggle against the suppression of children and young people and for the right of all children to education." He is the founder of multiple social activist organizations, including Bachpan Bachao Andolan, Global March Against Child Labour, Global Campaign for Education, Kailash Satyarthi Children's Foundation, and Bal Ashram Trust.atyarthi was among Fortune magazine's "World's Greatest Leaders" in 2015.
+    </h4>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+    <!------------------JS-------------------------->
+    <script>
+        let moon=document.getElementById("moon");
+        let eb=document.getElementById("entirebody");
+        let flag=0;
+        moon.addEventListener('click',function(){
+            if(flag==1)
+            {
+            moon.style.color="white";
+            eb.style.backgroundColor="black";
+            flag=0;
+            }
+       else{
+        moon.style.color="black";
+            eb.style.backgroundColor="white";
+            flag=1;
+       }
+
+        })
+    </script>
+</body>
+</htmL>
