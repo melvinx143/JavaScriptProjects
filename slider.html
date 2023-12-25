@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content
+    {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top:80px;
+        grid-gap:30px;
+    }
+    *
+    {
+        padding:0;
+        margin:0;
+    }
+   .control
+   {
+    width:370px;
+    padding:20px;
+    background-color: grey;
+    font-size: 22px;
+    font-weight: bold;
+   }
+ 
+    .content_1
+    {
+        display:grid;
+        grid-template-rows: auto auto auto auto;
+        grid-gap:80px;
+     
+      
+     
+    }
+    .content_1 img
+        {
+            border-radius:50%;
+            border:2px solid black;
+            width:100px;
+        }
+    #descp
+    {
+        margin:10px;
+        color:black;
+    text-shadow: 12px 12px 12px grey;
+        font-size: 22px;
+    }
+    #notesabout
+    {
+        border:1px solid black;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin-top:20px;
+        width:600px;
+    }
+    @media screen and (max-width:797px) {
+       .content{
+        display:flex;
+flex-direction: column;
+        grid-gap:1px;
+
+        
+       }
+        .content_2
+        {
+            display:flex;
+            flex-direction: column;
+            width:400px;
+            box-shadow: 12px 12px 12px grey;
+            margin-bottom:20px;
+            
+        }
+        .content_1{
+            display:grid;
+            grid-template-columns: auto auto;
+            margin-bottom:5px;
+            justify-content: center;
+            align-items: center;
+            margin-top:20px;
+            text-align: center; 
+        }
+        
+        .control
+        {
+            width:360px;
+        }
+    }
+</style>
+<body>
+    <h1 style="text-align: center;background-color: grey;">SLIDER</h1>
+<div class="content">
+
+    <div class="content_1">
+        <img src="./images/Vijay_Mallya_300.jpg" width="100px" height="100px" id="link_1" >
+        <img src="./images/ratantata.png" width="100px" height="100px" id="link_2">
+        <img src="./images/anand mahindra.jpg" width="100px" height="100px" id="link_3">
+        <img src="./images/azim.png" width="100px" height="100px" id="link_4">
+    </div>
+      
+        <div class="content_2">
+            <img src="./images/ob33.jpg" id="img_link" width="400px" height="500px">
+            <h3 id="descp">He is the Angry Youngman of bollywood</h3>
+            <div class="control">
+            <span id="left">&#11164;</span>
+            <span id="right">&#11166;</span>
+        </div>
+    </div>
+     
+    <div id="notesabout">
+    <h1 id="headlining">Elon Musk</h1>
+        <p id="textingforus"><strong id="personname">ELON MUSK</strong> amet consectetur adipisicing elit. Fugit fugiat recusandae blanditiis et culpa. Molestias neque nobis dolorem consectetur alias voluptatum. Nemo, quaerat harum voluptates blanditiis quidem cupiditate architecto eos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores, odio ut animi quas ea veritatis assumenda exercitationem fugit consequatur magnam non sequi obcaecati commodi, esse ad eveniet eum id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam vel corrupti aperiam facilis, eos recusandae nesciunt sapiente quaerat totam? Facilis dicta quisquam ipsum sequi tempore doloremque numquam commodi doloribus!
+        </p>
+    
+    </div>
+</div>
+
+    <script>
+        let link_1_id=document.getElementById("link_1");
+        let link_2_id=document.getElementById("link_2");
+        let link_3_id=document.getElementById("link_3");
+        let link_4_id=document.getElementById("link_4");
+        let headlining_id=document.getElementById("headlining");
+        let personname_id=document.getElementById("personname");
+        let rt=document.getElementById("right");
+        let lt=document.getElementById("left");
+        let img_id=document.getElementById("img_link");
+        let descp_id=document.getElementById("descp");
+        link_1_id.addEventListener('click',function(){
+            img_id.src=link_1_id.src;
+        })
+        link_2_id.addEventListener('click',function(){
+            img_id.src=link_2_id.src;
+        })
+        link_3_id.addEventListener('click',function(){
+            img_id.src=link_3_id.src;
+        })
+        link_4_id.addEventListener('click',function(){
+            img_id.src=link_4_id.src;
+        })
+        let display=[
+            {
+            img_id:"./images/elon8.jpg",
+            descp_id:"ELON MUSK",
+            link_1_id:"./images/elon1.jpg",
+            link_2_id:"./images/elon2.webp",
+            link_3_id:"./images/elon3.jpg",
+            link_4_id:"./images/elon4.jpg",
+            personname_id:"ELON MUSK",
+            headlining_id:"ELON MUSK"
+        },
+            {  
+                img_id:"./images/tc8.webp",
+            descp_id:"TOM CRUISE",
+            link_1_id:"./images/tc1.jpg",
+            link_2_id:"./images/tc2.webp",
+            link_3_id:"./images/tc4.jpg",
+            link_4_id:"./images/tc7.webp",
+            personname_id:"TOM CRUISE",
+            headlining_id:"TOM CRUISE",
+        },
+            {  
+                img_id:"./images/mt1.webp",
+            descp_id:"Mike Tyson",
+            link_1_id:"./images/mt2.jpg",
+            link_2_id:"./images/mt3.webp",
+            link_3_id:"./images/mt4.jpg",
+            link_4_id:"./images/mt10.webp",
+            personname_id:"MIKE TYSON",
+            headlining_id:"MIKE TYSON",
+        },
+            { 
+                 img_id:"./images/ob1.webp",
+            descp_id:"Barack Obama",
+            link_1_id:"./images/ob33.jpg",
+            link_2_id:"./images/ob3.jpg",
+            link_3_id:"./images/ob4.webp",
+            link_4_id:"./images/ob5.jpg",
+            personname_id:"Obama",
+            headlining_id:"BARRACK OBAMA",
+        }
+        ]
+        let currentindex=0;
+        window.addEventListener('DOMContentLoaded',function(){
+            personme(currentindex);
+            console.log(personme(currentindex));
+        });
+        function personme(itemz)
+        {
+            let que=display[itemz];
+            img_id.src=que.img_id;
+            descp_id.textContent=que.descp_id;
+            link_1_id.src=que.link_1_id;
+            link_2_id.src=que.link_2_id;
+            link_3_id.src=que.link_3_id; 
+             link_4_id.src=que.link_4_id;
+             personname_id.textContent=que.personname_id;
+            headlining_id.textContent=que.headlining_id;
+        };
+        rt.addEventListener('click',function(){
+      
+            currentindex++;
+            if(currentindex>display.length-1)
+            {
+                currentindex=0;
+            }
+            personme(currentindex);
+        });
+    </script>
+</body>
+</html>
