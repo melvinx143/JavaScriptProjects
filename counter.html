@@ -1,79 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COUNTER</title>
- 
+    <title>Document</title>
 </head>
-<!----------------------------STYLE------------------->
 <style>
-    button{
-        border-radius:12px;
-        border:12px;
-        width:100px;
-        box-shadow:12px 12px 12px grey;
-        padding:12px;
-        font-size:15px;
-        font-family: serif;
+    .body_content
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #subtract,#add,#reset
+    {
+        padding:8px;
         margin:20px;
+        border-radius: 5px;
+        border:none;
+        color:white;
+        background-color: grey;
         font-weight: bold;
+        width:100px;
+    }
+    #nav
+    {
+        display:flex;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        color:white;
+        flex-direction: column;
+        margin-bottom:100px;
+        padding:20px;
     }
     *
     {
         margin:0;
-        padding:0;
     }
-    .content
+    .number
     {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: cornflowerblue;
-        width:100%;
-        height:700px;
+        font-size: 30px;
+        font-weight: bold;
     }
 </style>
 <body>
-    <div class="content">  <!--------------CLASS------------->
-        <div class="inside-content">
-            <h1 style="margin-bottom:20px;">BASIC COUNTER</h1>
-            <h1 id="innertext">0</h1>
-            <button onclick="increase()">INCREASE</button><!-----CREATING BUTTON FOR INCREASING OR DECREASING VALUE-->
-            <button onclick="decrease()">DECREASE</button>
-            <button onclick="reset()">RESET</button>
-        </div>
+    <h1 id="nav">COUNTERS</h1>
+    <div class="body_content">
+<div class="number">0</div>
+<div class="buttons">
+<button id="add">+</button>
+<button id="reset">Reset</button>
+<button id="subtract">-</button>
+</div>
     </div>
-    <!---------------internal script---------------------->
-    <script>
-
-let counter=0;
-let b=document.getElementById("innertext");
-//code for counter for increasing or decreasing
-function increase()
-{ 
-    counter++;
-    b.innerHTML=counter;
-   
-}
-//code for counter resetting
-function reset()
-{
-    counter=0;
-    b.innerHTML=counter;
-   
-}
-//code for decreasing
-function decrease()
-{
-    counter--;
-    b.innerHTML=counter;
-   
-}
-
-    </script>
 </body>
+<script>
+    let c=0;
+    let k;
+    let nu=document.querySelector(".number");
+    let a=document.getElementById("add");
+    let reset=document.getElementById("reset");
+    let s=document.getElementById("subtract");
+    a.addEventListener('click',function(){
+k=c++;
+nu.innerHTML=k;
+    });
+    s.addEventListener('click',function(){
+k=c--;
+nu.innerHTML=k;
+    });
+    reset.addEventListener('click',function(){
+c=0;
+nu.innerHTML=c;
+    });
+
+</script>
 </html>
