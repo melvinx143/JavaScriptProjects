@@ -3,217 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SLIDER</title>
 </head>
 <style>
-    .content
-    {
-        display:grid;
-        grid-template-columns: auto auto auto;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top:80px;
-        grid-gap:30px;
+    body{
+        background-image: url('indianflag.jpg');
+        background-repeat: no-repeat;
+    opacity: 0.9;
+        background-size: 100%;
     }
     *
     {
         padding:0;
         margin:0;
+        color:blue;
     }
-   .control
-   {
-    width:370px;
-    padding:20px;
-    background-color: grey;
-    font-size: 22px;
-    font-weight: bold;
-   }
- 
-    .content_1
+    .sectioncenter
     {
-        display:grid;
-        grid-template-rows: auto auto auto auto;
-        grid-gap:80px;
-     
-      
-     
-    }
-    .content_1 img
-        {
-            border-radius:50%;
-            border:2px solid black;
-            width:100px;
-        }
-    #descp
-    {
-        margin:10px;
-        color:black;
-    text-shadow: 12px 12px 12px grey;
-        font-size: 22px;
-    }
-    #notesabout
-    {
-        border:1px solid black;
-        box-sizing: border-box;
-        font-size: 18px;
-        margin-top:20px;
-        width:600px;
-    }
-    @media screen and (max-width:797px) {
-       .content{
         display:flex;
-flex-direction: column;
-        grid-gap:1px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top:10rem;
 
-        
-       }
-        .content_2
-        {
-            display:flex;
-            flex-direction: column;
-            width:400px;
-            box-shadow: 12px 12px 12px grey;
-            margin-bottom:20px;
-            
-        }
-        .content_1{
-            display:grid;
-            grid-template-columns: auto auto;
-            margin-bottom:5px;
-            justify-content: center;
-            align-items: center;
-            margin-top:20px;
-            text-align: center; 
-        }
-        
-        .control
-        {
-            width:360px;
-        }
     }
+    #description,#location,#country
+    {
+        font-size: 22px;
+        font-family: serif;
+        margin-top:1.5rem;
+    }
+    #btn1,#btn2
+    {
+       margin:1.5rem;
+        padding:10px;
+        cursor:pointer;
+    
+    }
+#btn1:hover,#btn2:hover{
+    color:white;
+    background-color: black;
+}
+#img_section
+{
+    width:450px;
+}
+.two2
+{
+    margin-left:3rem;
+    border:1px solid grey;
+    box-sizing: content-box;
+    width:300px;
+    padding:20px;
+    background-color: aliceblue;
+
+}
+.buttonformovement
+{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 </style>
 <body>
-    <h1 style="text-align: center;background-color: grey;">SLIDER</h1>
-<div class="content">
-
-    <div class="content_1">
-        <img src="./images/Vijay_Mallya_300.jpg" width="100px" height="100px" id="link_1" >
-        <img src="./images/ratantata.png" width="100px" height="100px" id="link_2">
-        <img src="./images/anand mahindra.jpg" width="100px" height="100px" id="link_3">
-        <img src="./images/azim.png" width="100px" height="100px" id="link_4">
+    <div class="sectioncenter">
+        <div class="one1">
+        <img src="number1.jpg" height="300px" width="300px" id="img_section">
+        <div id="description">This is describing about the location how beautiful is this place</div>
+        <div id="location">Rajasthan </div>
+        <div id="country">India</div>
     </div>
-      
-        <div class="content_2">
-            <img src="./images/ob33.jpg" id="img_link" width="400px" height="500px">
-            <h3 id="descp">He is the Angry Youngman of bollywood</h3>
-            <div class="control">
-            <span id="left">&#11164;</span>
-            <span id="right">&#11166;</span>
-        </div>
-    </div>
-     
-    <div id="notesabout">
-    <h1 id="headlining">Elon Musk</h1>
-        <p id="textingforus"><strong id="personname">ELON MUSK</strong> amet consectetur adipisicing elit. Fugit fugiat recusandae blanditiis et culpa. Molestias neque nobis dolorem consectetur alias voluptatum. Nemo, quaerat harum voluptates blanditiis quidem cupiditate architecto eos.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores, odio ut animi quas ea veritatis assumenda exercitationem fugit consequatur magnam non sequi obcaecati commodi, esse ad eveniet eum id.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam vel corrupti aperiam facilis, eos recusandae nesciunt sapiente quaerat totam? Facilis dicta quisquam ipsum sequi tempore doloremque numquam commodi doloribus!
-        </p>
-    
-    </div>
+          <div class="two2">
+            <h3 id="abouttheicon">
+                <div class="points">At 182 metres, Statue of Unity is the tallest statue in the world.</div>
+                <div class="points">The statue faces the Narmada Dam and is located on a river island called Sadhu Bet near Rajpipla on Narmada River.</div>
+                <div class="points">It is located between the Satpura and the Vindhya mountain ranges near Kevadia town in Gujarat.</div>
+                <div class="points">Around 129 tonnes of iron implements were obtained from nearly 100 million farmers in 169,000 villages across all states for the statue.</div>
+                <div class="points">The statue will be able to withstand earthquakes and wind speed up to around 100 km per second.</div>
+                
+            </h3>
+          </div>
+        
 </div>
-
-    <script>
-        let link_1_id=document.getElementById("link_1");
-        let link_2_id=document.getElementById("link_2");
-        let link_3_id=document.getElementById("link_3");
-        let link_4_id=document.getElementById("link_4");
-        let headlining_id=document.getElementById("headlining");
-        let personname_id=document.getElementById("personname");
-        let rt=document.getElementById("right");
-        let lt=document.getElementById("left");
-        let img_id=document.getElementById("img_link");
-        let descp_id=document.getElementById("descp");
-        link_1_id.addEventListener('click',function(){
-            img_id.src=link_1_id.src;
-        })
-        link_2_id.addEventListener('click',function(){
-            img_id.src=link_2_id.src;
-        })
-        link_3_id.addEventListener('click',function(){
-            img_id.src=link_3_id.src;
-        })
-        link_4_id.addEventListener('click',function(){
-            img_id.src=link_4_id.src;
-        })
-        let display=[
-            {
-            img_id:"./images/elon8.jpg",
-            descp_id:"ELON MUSK",
-            link_1_id:"./images/elon1.jpg",
-            link_2_id:"./images/elon2.webp",
-            link_3_id:"./images/elon3.jpg",
-            link_4_id:"./images/elon4.jpg",
-            personname_id:"ELON MUSK",
-            headlining_id:"ELON MUSK"
-        },
-            {  
-                img_id:"./images/tc8.webp",
-            descp_id:"TOM CRUISE",
-            link_1_id:"./images/tc1.jpg",
-            link_2_id:"./images/tc2.webp",
-            link_3_id:"./images/tc4.jpg",
-            link_4_id:"./images/tc7.webp",
-            personname_id:"TOM CRUISE",
-            headlining_id:"TOM CRUISE",
-        },
-            {  
-                img_id:"./images/mt1.webp",
-            descp_id:"Mike Tyson",
-            link_1_id:"./images/mt2.jpg",
-            link_2_id:"./images/mt3.webp",
-            link_3_id:"./images/mt4.jpg",
-            link_4_id:"./images/mt10.webp",
-            personname_id:"MIKE TYSON",
-            headlining_id:"MIKE TYSON",
-        },
-            { 
-                 img_id:"./images/ob1.webp",
-            descp_id:"Barack Obama",
-            link_1_id:"./images/ob33.jpg",
-            link_2_id:"./images/ob3.jpg",
-            link_3_id:"./images/ob4.webp",
-            link_4_id:"./images/ob5.jpg",
-            personname_id:"Obama",
-            headlining_id:"BARRACK OBAMA",
-        }
-        ]
-        let currentindex=0;
-        window.addEventListener('DOMContentLoaded',function(){
-            personme(currentindex);
-            console.log(personme(currentindex));
-        });
-        function personme(itemz)
-        {
-            let que=display[itemz];
-            img_id.src=que.img_id;
-            descp_id.textContent=que.descp_id;
-            link_1_id.src=que.link_1_id;
-            link_2_id.src=que.link_2_id;
-            link_3_id.src=que.link_3_id; 
-             link_4_id.src=que.link_4_id;
-             personname_id.textContent=que.personname_id;
-            headlining_id.textContent=que.headlining_id;
-        };
-        rt.addEventListener('click',function(){
-      
-            currentindex++;
-            if(currentindex>display.length-1)
-            {
-                currentindex=0;
-            }
-            personme(currentindex);
-        });
-    </script>
+<div class="buttonformovement">
+    <button id="btn1">&#11164;</button>
+    <button id="btn2">&#11166;</button>
+</div>
 </body>
+<script>
+    let des=document.getElementById("description");
+let locations=document.getElementById('location');
+let country=document.getElementById('country');
+let img=document.getElementById('img_section');
+let btn1=document.getElementById("btn1");
+let btn2=document.getElementById("btn2");
+let about=document.getElementById("abouttheicon");
+    let menu=[
+        {
+            img:'charminar.jpg',
+            des:'Charminar',
+            locations:'Hyderabad',
+            country:'India',
+            about:'Charminar is the iconic landmark of the South Indian city of Hyderabad. These Tazias were built in the memory of Hussain.Was built to commemorate the end plague. There is a secret underground tunnel that links Charminar and Golconda fort. A cat was carved on one of the arches of the Charminar. It was the first multi-storied building in Hyderabad.Charminar is considered to be the center of Hyderabad city because it was deliberately built in the heart of the city. The city was intended over a gridiron pattern, with the iconic Charminar as the focal point.It has four arches'
+        },
+        {
+            img:'indiagate.jpg',
+            des:'India Gate',
+            locations:'New Delhi',
+            country:'India',
+            about:'The Duke of Connaught laid the foundation stone for India’s largest war cemeteries and memorials to troops slain in the First World War on February 10, 1921.The principal designer was Sir Edwin Lutyens. Viceroy Lord Irwin officially opened it on February 12, 1931.Another patriotic attraction is the flags of India’s three armed forces.The sun, which represents the British Imperial Colony, is engraved on the cornices of India Gate.The construction of the All-India War Memorial, as it was originally named, lasted until 1931, the year New Delhi was formally designated as India’s capital.'
+        },
+        {
+            img:'redfort.jpg',
+            des:'Red Fort',
+            locations:'New Delhi',
+            country:'India',
+            about:'The Red Fort was Actually White!It Took a Decade (or Ten Years) to Build the Red Fort.The Kohinoor Diamond Was Part of the Red Fort Furniture.Rang Mahal in Red Fort.The Shape of the Red Fort is Octagonal.The last Mughal Emperor, Bahadur Shah Zafar, became a symbol of the 1857 rebellion against the British empire. He was tried by the British for treason in his own home – the Red Fort.Do you know that the Red Fort was not always known by its current name? It was originally known as “Qila-e-Mubarak”. This name simplifies to “The Blessed Fort”.'
+        },
+        {
+            img:'mumbaigate.jpg',
+            des:'Mumbai Gate',
+            locations:'Mumbai',
+            country:'India',
+            about:'The Gateway of India was erected in honour of King George V and Queen Mary’s landing at Apollo Bunder on their visit to India.The archway of the monument is 26 meters (85 feet) high and joined with four turrets and intricate latticework carved on stones.The archway of the monument is built of Basalt and about 21 lakhs was spent to build the arch alone.The structure is an adaptation of the Arc de Triomphe in Paris.George Wittet was the chief architect of the Gateway of India.The central dome of Gateway of India in Mumbai is 48 feet in diameter and 83 feet high at the highest point.'
+
+        },
+        {
+            img:'sou.jpeg',
+            des:'Statue Of Unity',
+            locations:'Gujarat',
+            country:'India',
+            about:'At 182 metres, Statue of Unity is the tallest statue in the world.The statue faces the Narmada Dam and is located on a river island called Sadhu Bet near Rajpipla on Narmada River.It is located between the Satpura and the Vindhya mountain ranges near Kevadia town in Gujarat.Around 129 tonnes of iron implements were obtained from nearly 100 million farmers in 169,000 villages across all states for the statue.The statue will be able to withstand earthquakes and wind speed up to around 100 km per second.'
+        }
+    ];
+
+
+
+
+let currentperson=4;
+
+window.addEventListener('DOMContentLoaded',function(){
+    showperson();
+});
+
+function showperson()
+{
+let present=menu[currentperson];
+des.textContent=present.des;
+img.src=present.img;
+des.textContent=present.des;
+locations.textContent=present.locations;
+country.textContent=present.country;
+about.textContent=present.about;
+
+}
+btn1.addEventListener('click',function(){
+currentperson++;
+if(currentperson>menu.length-1)
+{
+    currentperson=0;
+}
+showperson();
+});
+btn2.addEventListener('click',function(){
+    currentperson--;
+    if(currentperson<0)
+    {
+        currentperson=menu.length-1;
+    }
+    showperson();
+});
+</script>
 </html>
