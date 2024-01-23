@@ -20,6 +20,7 @@
         height:700px;
         padding:20px;
         margin-top:20px;
+        background-color: antiquewhite;
     }
     *
     {
@@ -36,6 +37,12 @@
         font-weight: bold;
         font-family: serif;
         cursor:pointer;
+    }
+    button:hover
+    {
+        color:white;
+        background-color: black;
+        box-shadow: 12px 12px 12px grey;
     }
   
 .moves,.content_body,.moves,.buttoning
@@ -108,7 +115,7 @@ function rock()
     computerss.innerHTML='ROCK';
     user.innerHTML='ROCK';
     statuss.innerHTML='MATCH DRAW!!!'
-    statuss.style.color="yellow";
+    statuss.style.color="grey";
  }
  else if((move>4)&&(move<7))
  {
@@ -148,7 +155,7 @@ function rock()
     computerss.innerHTML='PAPER';
     user.innerHTML='PAPER';
     statuss.innerHTML='DRAW!!!'
-    statuss.style.color="YELLOW";
+    statuss.style.color="grey";
  }
  else{
     computerss.innerHTML='SCISSORS';
@@ -188,7 +195,7 @@ function rock()
     user.innerHTML='SCISSOR';
 
     statuss.innerHTML='MATCH DRAW!!!'
-    statuss.style.color="yellow";
+    statuss.style.color="grey";
    
 }
 
