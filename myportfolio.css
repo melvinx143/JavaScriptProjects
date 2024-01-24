@@ -46,18 +46,22 @@ html{
 {
     border-radius: 50%;
     box-shadow: 12px 12px 12px grey;
-    margin-left:2rem;
+    margin-left:5rem;
+    height:350px;
 }
 
 .allinfo
 {
     display:flex;
     flex-direction: column;
-    margin-right:200px;
+    margin-right:50px;
     align-items: center;
     text-align: center;
-    margin-left:1.5rem;
-    
+    margin-left:1rem;
+    border:1px solid white;
+    border-radius:22px;
+    padding:20px;
+    box-shadow:12px 12px 12px grey;
 }
 .logo
 {
@@ -92,6 +96,11 @@ button
     width:150px;
     box-shadow: 12px 12px 12px grey;
 }
+#shortz
+{
+    text-align: center;
+    margin-top:5rem;
+}
 button:hover{
     color:white;
     background-color: black;
@@ -111,20 +120,21 @@ button:hover{
 #aboutmesection
 {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     box-shadow: 12px 12px 12px grey;
-    margin-top:8rem;
-    width:85%;
+    margin-top:2rem;
+    width:90%;
     border:0.4px solid blue;
-    margin-left:4rem;
+    margin-left:5rem;
     border-radius: 22px;
+    gap:4rem;
 }
 #qualifications
 {
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-between;
     gap:1.5rem;
     font-size: 18px;
@@ -135,7 +145,8 @@ button:hover{
     border-radius: 22px;
     margin-top:2rem;
     margin-bottom:1.5rem;
-    width:600px;
+    width:400px;
+    margin-left:3rem;
     text-align: center;
     align-items: center;
     box-shadow: 12px 12px 12px grey;
@@ -155,8 +166,8 @@ button:hover{
     margin-top:1.5rem;
     margin-bottom: 5rem;
     border:1px solid grey;
-    padding:20px;
-    width:600px;
+    padding:30px;
+    width:700px;
     border-radius: 22px;
     font-family: serif;
     font-weight: bold;
@@ -194,8 +205,8 @@ button:hover{
     align-items: center;
     text-align: center;
     border:1px solid blue;
-    padding:20px;
-    width:82%;
+    padding:10px;
+    width:90%;
     justify-content: center;
     margin-left:4rem;
     margin-top:3rem;
@@ -205,8 +216,8 @@ button:hover{
 }
 .part1
 {
-    width:95%;
-    padding:20px;
+    width:75%;
+    padding:10px;
     align-items: center;
     display:flex;
     flex-direction: column;
@@ -227,14 +238,14 @@ button:hover{
 {
     display:grid;
     grid-template-columns: repeat(2,auto);
-    gap:2rem;
+    gap:1rem;
     justify-content: center;
     border:1px solid green;
     margin-top: 2rem;
-    width:80%;
+    width:87%;
     margin-left:4.5rem;
     box-shadow: 12px 12px 12px grey;
-    padding:30px;
+    padding:20px;
     border-radius: 22px;
 }
 .inside1,.inside2
@@ -257,5 +268,103 @@ button:hover{
 {
     margin-top:1.5rem;
 }
+.Contactme
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border:1px solid green;
+    width:90%;
+    margin-left:3rem;
+    padding:22px;
+    text-align: center;
+    align-items: center;
+    border-radius:22px;
+    margin-top:1.5rem;
+    box-shadow: 12px 12px 12px grey;
 
+
+}
+button{
+    cursor:pointer;
+}
+#linkedin,#email
+{
+    color:grey;
+    text-decoration: none;
+}
+#btn
+{
+    color:green;
+    background-color:transparent;
+}
+#btn:hover{
+    background:linear-gradient('green','yellow');
+}
+@media screen and (max-width:607px){
+    #nav_link
+    {
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+align-items: center;     
+margin-left:3rem; 
+    }
+    .logo{
+        display:none;
+        
+    }
+    .content_body{
+        display:flex;
+        flex-direction: column;
+    }
+    .imgs
+    {
+        width:100px;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-left:3rem;
+        height:100px;
+    }
+    .allinfo{
+        margin-right:0.3rem;
+        margin-left:6rem;
+        width:70%;
+        border:1px solid green;
+    }
+    #aboutmesection
+    {
+        display:flex;
+        flex-direction: column;
+    }
+#qualifications,.skills
+{
+    width:60%;
+}
+.skillasset{
+    display:flex;
+    flex-direction: column;
+}
+.front-end
+{
+    display:grid;
+    grid-template-columns:auto;
+}
+.profilepic
+{
+    width:2%;
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   margin-right:90%;
+
+}
+.part1 img {
+    width:250px;
+};
+}
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;1,500&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@1,600&family=Rubik+Burned&display=swap')
+
