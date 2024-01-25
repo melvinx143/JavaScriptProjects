@@ -338,7 +338,7 @@ margin-left:3rem;
     .allinfo{
         margin-right:0.3rem;
         margin-left:0.2rem;
-        width:60%;
+        width:80%;
         border:1px solid green;
     }
     #aboutmesection
@@ -358,6 +358,11 @@ margin-left:3rem;
 {
     display:grid;
     grid-template-columns:auto;
+}
+    #myprojects
+{
+    width:85%;
+    margin-right:3rem;
 }
 .profilepic
 {
