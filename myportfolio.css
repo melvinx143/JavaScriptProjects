@@ -235,29 +235,36 @@ button:hover{
     width:80%;
 }
 
-.two
-{
-    display:grid;
-    grid-template-columns: repeat(2,auto);
-    gap:1rem;
-    justify-content: center;
-    border:1px solid green;
-    margin-top: 2rem;
-    width:87%;
-    margin-left:4.5rem;
-    box-shadow: 12px 12px 12px grey;
-    padding:20px;
-    border-radius: 22px;
+
+two{
+    display:flex;
+    flex-direction: column;
+    width:300px;
 }
-.inside1,.inside2
+.inside1,.inside2{
+    width:270px;
+    padding:10px;
+}
+.inside1 img,.inside2 img{
+    width:180px;
+}
+#myprojects
 {
-    border:1px solid black;
-    padding:20px;
-    width:54px;
-    justify-content: center;
-    align-items: center;
+    width:90%;
+    margin-right:3rem;
+    margin-left:0.4rem;
+}
+#shortz
+{
     text-align: center;
- 
+    margin-left:2rem;
+}
+
+
+
+
+
+
 
 }
 .describe
