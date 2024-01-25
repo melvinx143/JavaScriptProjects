@@ -349,7 +349,10 @@ margin-left:3rem;
     }
 #qualifications,.skills
 {
-    width:80%;
+    
+     width:90%;
+    margin-right:3rem;
+    margin-left:0.4rem;
 }
 .skillasset{
     display:flex;
