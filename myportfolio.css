@@ -361,8 +361,9 @@ margin-left:3rem;
 }
     #myprojects
 {
-    width:85%;
+      width:90%;
     margin-right:3rem;
+    margin-left:0.4rem;
 }
 .profilepic
 {
